@@ -1,7 +1,5 @@
-// sample angular code
+var app = angular.module('pokemonApp', []);
 
-var app = angular.module('myApp', []);
-
-app.controller('myController', ['$scope', function($scope) {
+app.controller('myController', ['$http', '$scope', function($http, $scope) {
   $scope.greeting = "Hello World!";
 }]);
